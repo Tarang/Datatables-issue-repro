@@ -1,0 +1,29 @@
+<head>
+  <title>datatablesbug</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+
+  <table  class="display table table-bordered table-striped" id="dynamic-table">
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Mobile</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each item}}
+                                <tr>
+                                    <td>{{name}}</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+</template>
